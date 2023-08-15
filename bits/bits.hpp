@@ -38,22 +38,22 @@ namespace AquIce {
 		};
 
 		template <typename T>
-		bool get(T value, int index);
+		bool get(T, int);
 
 		template <typename T, int Nb>
-		std::array<bool, Nb> get(T value, int index);
+		std::array<bool, Nb> get(T, int);
 
 		template <typename T, int Nb, bool IsT>
-		T get(T value, int index);
+		T get(T, int);
 
 		template <typename T>
-		void set(T* value, int index, bool nval);
+		void set(T*, int, bool);
 
 		template <typename T, int Nb>
-		void set(T* value, int index, std::array<bool, Nb> nvals);
+		void set(T*, int, std::array<bool, Nb>);
 
 		template <typename T, int Nb, bool IsT>
-		void set(T* value, int index, T nvals);
+		void set(T*, int, T);
 	}
 }
 
